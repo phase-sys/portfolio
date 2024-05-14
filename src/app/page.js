@@ -27,7 +27,7 @@ export default function Home() {
     // dark: bg - gray - 900;
     return (
         <div className={darkMode ? "dark" : ""}>
-            <main className="bg-white px-10 md:px-20 lg:40 dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800">
+            <main className="bg-white px-5 md:px-32 lg:px-48 dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800">
                 <section className="min-h-screen">
                     <nav className="py-10 mb-12 flex justify-between">
                         <h1 className="text-xl dark:text-white dark:font-black">
@@ -49,7 +49,7 @@ export default function Home() {
                             </li>
                             <li>
                                 <a
-                                    className="font-spaceGrotesk bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                                    className="font-spaceGrotesk bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4"
                                     href={"/resume.pdf"}
                                     target="_blank"
                                 >
@@ -58,7 +58,7 @@ export default function Home() {
                             </li>
                         </ul>
                     </nav>
-                    <div className="text-center p-10">
+                    <div className="text-center sm:p-5 lg:p-10">
                         <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-300">
                             Jose Alfred Magat
                         </h2>
@@ -68,7 +68,7 @@ export default function Home() {
                         <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-400">
                             I’m a passionate Software Developer. Whether it’s
                             designing user-friendly interfaces or writing
-                            efficient code."
+                            efficient code.
                         </p>
                     </div>
                     <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -120,8 +120,8 @@ export default function Home() {
                             .
                         </p>
                     </div>
-                    <div className="lg:flex gap-10 justify-center my-5">
-                        <div className="flex flex-col items-center shadow-xl p-10 rounded-xl dark:bg-gradient-to-b dark:from-cyan-500 dark:to-teal-500">
+                    <div className="flex flex-col lg:flex-row gap-10 justify-center my-5">
+                        <div className="flex flex-col items-center shadow-lg p-10 rounded-xl dark:bg-gradient-to-b dark:from-cyan-500 dark:to-teal-500">
                             <DiAndroid
                                 size={140}
                                 className="text-teal-500 dark:text-gray-900 p-5"
