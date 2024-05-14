@@ -188,7 +188,11 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap items-center justify-center">
-                        <div className="basis-1/3">
+                        <a
+                            href="/zavod/2.jpg"
+                            target="_blank"
+                            className="basis-1/3 hover:scale-110 hover:opacity-75"
+                        >
                             <Image
                                 className="rounded-lg object-fill"
                                 width={"100%"}
@@ -196,8 +200,12 @@ export default function Home() {
                                 layout="responsive"
                                 src={z2}
                             />
-                        </div>
-                        <div className="basis-1/3">
+                        </a>
+                        <a
+                            href="/capstone/6.png"
+                            target="_blank"
+                            className="basis-1/3 hover:scale-110 hover:opacity-75"
+                        >
                             <Image
                                 className="rounded-lg object-fill"
                                 width={"100%"}
@@ -205,7 +213,7 @@ export default function Home() {
                                 layout="responsive"
                                 src={c6}
                             />
-                        </div>
+                        </a>
                     </div>
                 </section>
             </main>
