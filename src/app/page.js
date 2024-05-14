@@ -27,7 +27,7 @@ export default function Home() {
     // dark: bg - gray - 900;
     return (
         <div className={darkMode ? "dark" : ""}>
-            <main className="bg-white px-5 md:px-32 lg:px-48 dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800">
+            <main className="flex flex-col gap-4 bg-white px-5 md:px-32 lg:px-48 dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800">
                 <section className="min-h-screen">
                     <nav className="py-10 mb-12 flex justify-between">
                         <h1 className="text-xl dark:text-white dark:font-black">
@@ -99,7 +99,7 @@ export default function Home() {
                     </div> */}
                 </section>
 
-                <section className="mt-10">
+                <section>
                     <div className="text-center">
                         <h3 className="text-3xl py-1 dark:text-white dark:font-medium">
                             Skills
@@ -161,7 +161,7 @@ export default function Home() {
                 </section>
 
                 <section>
-                    <div className="text-center mt-20">
+                    <div className="text-center">
                         <h3 className="text-3xl py-1 dark:text-white dark:font-medium">
                             Portfolio
                         </h3>
