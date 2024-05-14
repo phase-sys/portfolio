@@ -102,7 +102,7 @@ export default function Home() {
                 <section className="mt-20 md:mt-10">
                     <div className="text-center">
                         <h3 className="text-3xl py-1 dark:text-white dark:font-medium">
-                            Services
+                            Skills
                         </h3>
                         <p className="text-md py-2 leading-8 text-gray-800">
                             <span className="dark:text-white">
@@ -187,59 +187,23 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap items-center">
-                        <div className="basis-1/7 flex-1">
+                    <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap items-center justify-center">
+                        <div className="basis-1/3">
                             <Image
-                                className="rounded-lg object-cover"
+                                className="rounded-lg object-fill"
                                 width={"100%"}
                                 height={"100%"}
                                 layout="responsive"
                                 src={z2}
                             />
                         </div>
-                        <div className="basis-1/7 flex-1">
+                        <div className="basis-1/3">
                             <Image
-                                className="rounded-lg object-cover"
-                                width={"100%"}
-                                height={"100%"}
-                                layout="responsive"
-                                src={z3}
-                            />
-                        </div>
-                        <div className="basis-1/7 flex-1">
-                            <Image
-                                className="rounded-lg object-cover"
-                                width={"100%"}
-                                height={"100%"}
-                                layout="responsive"
-                                src={c1}
-                            />
-                        </div>
-                        <div className="basis-1/7 flex-1">
-                            <Image
-                                className="rounded-lg object-cover"
-                                width={"100%"}
-                                height={"100%"}
-                                layout="responsive"
-                                src={c3}
-                            />
-                        </div>
-                        <div className="basis-1/7 flex-1">
-                            <Image
-                                className="rounded-lg object-cover"
+                                className="rounded-lg object-fill"
                                 width={"100%"}
                                 height={"100%"}
                                 layout="responsive"
                                 src={c6}
-                            />
-                        </div>
-                        <div className="basis-1/7 flex-1">
-                            <Image
-                                className="rounded-lg object-cover"
-                                width={"100%"}
-                                height={"100%"}
-                                layout="responsive"
-                                src={c15}
                             />
                         </div>
                     </div>
