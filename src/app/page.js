@@ -27,8 +27,8 @@ export default function Home() {
     // dark: bg - gray - 900;
     return (
         <div className={darkMode ? "dark" : ""}>
-            <main className="flex flex-col gap-4 bg-white px-5 md:px-32 lg:px-48 dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800">
-                <section className="min-h-screen">
+            <main className="flex flex-col gap-8 bg-white px-5 md:px-32 lg:px-48 dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800">
+                <section>
                     <nav className="py-10 mb-12 flex justify-between">
                         <h1 className="text-xl dark:text-white dark:font-black">
                             isPhaseShape
@@ -121,39 +121,39 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="flex flex-col lg:flex-row gap-10 justify-center my-5">
-                        <div className="flex flex-col items-center shadow-lg p-10 rounded-xl dark:bg-gradient-to-b dark:from-cyan-500 dark:to-teal-500">
+                        <div className="flex flex-col items-center shadow-lg p-10 rounded-xl bg-teal-500 dark:bg-gradient-to-b dark:from-cyan-500 dark:to-teal-500">
                             <DiAndroid
                                 size={140}
-                                className="text-teal-500 dark:text-gray-900 p-5"
+                                className="text-white dark:text-gray-900 p-5"
                             />
-                            <h3 className="text-lg font-medium pb-2 dark:text-gray-900">
+                            <h3 className="text-white text-center text-lg font-medium pb-2 dark:text-gray-900">
                                 Mobile Development
                             </h3>
                         </div>
-                        <div className="flex flex-col items-center shadow-xl p-10 rounded-xl dark:bg-gradient-to-b dark:from-cyan-500 dark:to-teal-500">
+                        <div className="flex flex-col items-center shadow-xl p-10 rounded-xl bg-teal-500 dark:bg-gradient-to-b dark:from-cyan-500 dark:to-teal-500">
                             <DiReact
                                 size={140}
-                                className="text-teal-500 dark:text-gray-900 p-5"
+                                className="text-white dark:text-gray-900 p-5"
                             />
-                            <h3 className="text-lg font-medium pb-2 dark:text-gray-900">
+                            <h3 className="text-white text-center text-lg font-medium pb-2 dark:text-gray-900">
                                 Web Development
                             </h3>
                         </div>
-                        <div className="flex flex-col items-center shadow-xl p-10 rounded-xl dark:bg-gradient-to-b dark:from-cyan-500 dark:to-teal-500">
+                        <div className="flex flex-col items-center shadow-xl p-10 rounded-xl bg-teal-500  dark:bg-gradient-to-b dark:from-cyan-500 dark:to-teal-500">
                             <DiDatabase
                                 size={140}
-                                className="text-teal-500 dark:text-gray-900 p-5"
+                                className="text-white dark:text-gray-900 p-5"
                             />
-                            <h3 className="text-lg font-medium pb-2 dark:text-gray-900">
+                            <h3 className="text-white text-center text-lg font-medium pb-2 dark:text-gray-900">
                                 Database Management
                             </h3>
                         </div>
-                        <div className="flex flex-col items-center shadow-xl p-10 rounded-xl dark:bg-gradient-to-b dark:from-cyan-500 dark:to-teal-500">
+                        <div className="flex flex-col items-center shadow-xl p-10 rounded-xl bg-teal-500  dark:bg-gradient-to-b dark:from-cyan-500 dark:to-teal-500">
                             <BiLogoFigma
                                 size={140}
-                                className="text-teal-500 dark:text-gray-900 p-5"
+                                className="text-white dark:text-gray-900 p-5"
                             />
-                            <h3 className="text-lg font-medium pb-2 dark:text-gray-900">
+                            <h3 className="text-white text-center text-lg font-medium pb-2 dark:text-gray-900">
                                 Design
                             </h3>
                         </div>
