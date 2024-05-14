@@ -99,7 +99,7 @@ export default function Home() {
                     </div> */}
                 </section>
 
-                <section className="mt-20 md:mt-10">
+                <section className="mt-10">
                     <div className="text-center">
                         <h3 className="text-3xl py-1 dark:text-white dark:font-medium">
                             Skills
