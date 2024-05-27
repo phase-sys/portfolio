@@ -12,12 +12,11 @@ import { BiLogoFigma } from "react-icons/bi";
 import Image from "next/image";
 
 import z2 from "../../public/zavod/2.jpg";
-import z3 from "../../public/zavod/3.jpg";
 
-import c1 from "../../public/capstone/1.png";
-import c3 from "../../public/capstone/3.png";
 import c6 from "../../public/capstone/6.png";
-import c15 from "../../public/capstone/15.png";
+
+import pythonPNG from "../../public/certificates/python.png";
+import cloudPNG from "../../public/certificates/cloud.png";
 
 import { useState } from "react";
 
@@ -214,6 +213,40 @@ export default function Home() {
                                 src={c6}
                             />
                         </a>
+                    </div>
+                </section>
+
+                <section>
+                    <div className="text-center">
+                        <h3 className="text-3xl py-1 dark:text-white dark:font-medium">
+                            Certificates
+                        </h3>
+                        <p className="text-md py-2 leading-8 text-gray-800">
+                            <span className="dark:text-white">
+                                These are some of my{" "}
+                                <span className="text-teal-500">
+                                    Certificates
+                                </span>{" "}
+                            </span>
+                            .
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap items-center justify-center">
+                        <Image
+                            className="rounded-lg object-fill"
+                            width={"100%"}
+                            height={"100%"}
+                            layout="responsive"
+                            src={pythonPNG}
+                        />
+                        <Image
+                            className="rounded-lg object-fill"
+                            width={"100%"}
+                            height={"100%"}
+                            layout="responsive"
+                            src={cloudPNG}
+                        />
                     </div>
                 </section>
             </main>
