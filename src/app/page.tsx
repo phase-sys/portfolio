@@ -20,7 +20,7 @@ export default function Home() {
       <ParticleBackground />
       <Navbar onContactOpen={() => setIsContactModalOpen(true)} />
       <main className="flex min-h-screen flex-col items-center justify-center w-full overflow-x-hidden">
-        <Hero onContactOpen={() => setIsContactModalOpen(true)} />
+        <Hero />
         <SystemArchitecture />
         <Certificates />
       </main>

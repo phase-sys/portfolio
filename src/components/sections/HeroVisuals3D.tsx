@@ -58,14 +58,21 @@ function TimerUpdater({ timer }: { timer: TimerAsClock }) {
 
 function HeroNames() {
   const groupRef = useRef<THREE.Group>(null)
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768)
-    checkMobile()
-    window.addEventListener('resize', checkMobile)
-    return () => window.removeEventListener('resize', checkMobile)
-  }, [])
+  const { viewport } = useThree()
+  
+  // Consolidated Responsive Config: [LG, MD, SM, XS, Base]
+  const config = viewport.width >= 12 ? { j: 1.5,  m: 2.0,  g: 1.4 }
+               : viewport.width >= 9  ? { j: 1.2,  m: 1.75, g: 1.2 }
+               : viewport.width >= 6  ? { j: 1.0,  m: 1.4,  g: 1 }
+               : viewport.width >= 3  ? { j: 0.6, m: 1.2, g: 0.8 }
+               : { j: 0.35,  m: 0.7,  g: 0.5 }
+  
+  const { j: joseSize, m: magatSize, g: gapY } = config
+  
+  // Flattened Positions: Centered at x=0.5 with vertical gap
+  const x = 0.5
+  const josePos: [number, number, number] = [x, 0.5 + gapY / 2, 0]
+  const magatPos: [number, number, number] = [x, 0.5 - gapY / 2, 0.2]
   
   useFrame((state) => {
     if (!groupRef.current) return
@@ -78,10 +85,10 @@ function HeroNames() {
     <group ref={groupRef}>
       {/* JOSE ALFRED - Outlined */}
       <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.4}>
-        <Center position={[0, isMobile ? 1.0 : 1.4, 0]}>
+        <Center position={josePos}>
           <Text
             font="/SpaceGrotesk.ttf"
-            fontSize={isMobile ? 0.8 : 1.5}
+            fontSize={joseSize}
             letterSpacing={-0.05}
             color="white"
             fillOpacity={0}
@@ -98,10 +105,10 @@ function HeroNames() {
       
       {/* MAGAT - Solid Pear */}
       <Float speed={2} rotationIntensity={0.3} floatIntensity={0.6}>
-        <Center position={[0, 0, 0.2]}>
+        <Center position={magatPos}>
           <Text
             font="/SpaceGrotesk.ttf"
-            fontSize={isMobile ? 1.4 : 2.4}
+            fontSize={magatSize}
             fontWeight="bold"
             letterSpacing={-0.08}
             color="#A3E635" // brand-pear

@@ -12,9 +12,9 @@ export function Navbar({ onContactOpen }: { onContactOpen?: () => void }) {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="flex items-center justify-between h-11 px-4 gap-6 max-w-[95vw]">
+      <div className="flex items-center justify-between h-11 px-3 sm:px-4 gap-3 sm:gap-6 max-w-[95vw]">
           <Link href="/" className="flex items-center group">
-            <span className="font-space-grotesk text-sm font-black tracking-widest uppercase transition-all duration-500 bg-linear-to-r from-brand-pear from-50% to-white to-50% bg-[length:200%_100%] bg-[position:100%_0] group-hover:bg-[position:0%_0] bg-clip-text text-transparent">
+            <span className="font-space-grotesk text-xs sm:text-sm font-black tracking-widest uppercase transition-all duration-500 bg-linear-to-r from-brand-pear from-50% to-white to-50% bg-[length:200%_100%] bg-[position:100%_0] group-hover:bg-[position:0%_0] bg-clip-text text-transparent">
               PHASE-SYS
             </span>
           </Link>
@@ -35,15 +35,12 @@ export function Navbar({ onContactOpen }: { onContactOpen?: () => void }) {
 
           <div className="h-4 w-[1px] bg-white/10"></div>
 
-          <nav className="flex items-center space-x-8 h-full">
-          <a href="#expertise" className="text-[10px] font-mono font-bold text-foreground/40 hover:text-brand-pear transition-colors tracking-widest uppercase h-full flex items-center border-b-2 border-transparent hover:border-brand-pear/50">
-            Expertise
-          </a>
+          <nav className="flex items-center space-x-4 sm:space-x-8 h-full">
           <a
             href="/resume.pdf"
             target="_blank"
             rel="noreferrer"
-            className="text-[10px] font-mono font-bold text-foreground/40 hover:text-brand-pear transition-colors tracking-widest uppercase h-full flex items-center border-b-2 border-transparent hover:border-brand-pear/50"
+            className="text-[9px] sm:text-[10px] font-mono font-bold text-foreground/40 hover:text-brand-pear transition-colors tracking-widest uppercase h-full flex items-center border-b-2 border-transparent hover:border-brand-pear/50"
           >
             Resum&eacute;
           </a>
