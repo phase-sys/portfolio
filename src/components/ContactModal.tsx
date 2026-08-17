@@ -76,20 +76,20 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   href="https://www.linkedin.com/in/jose-alfred-magat-188705239" 
                   target="_blank" 
                   rel="noreferrer"
-                  className="flex items-center justify-between p-4 bg-white/[0.02] border border-white/10 hover:border-brand-blue/40 hover:bg-white/[0.04] rounded-2xl transition-all duration-300 group"
+                  className="flex items-center justify-between p-4 bg-white/[0.02] border border-white/10 hover:border-brand-pear/40 hover:bg-white/[0.04] rounded-2xl transition-all duration-300 group"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-white/5 border border-white/10 text-brand-blue group-hover:scale-105 transition-transform duration-300">
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-white/5 border border-white/10 text-brand-pear group-hover:scale-105 transition-transform duration-300">
                       <Linkedin size={18} />
                     </div>
                     <div>
                       <span className="block text-[11px] font-mono text-white/40 uppercase tracking-wider mb-0.5">LinkedIn</span>
-                      <span className="text-sm font-medium text-white group-hover:text-brand-blue transition-colors">
+                      <span className="text-sm font-medium text-white group-hover:text-brand-pear transition-colors">
                         Jose Alfred Magat
                       </span>
                     </div>
                   </div>
-                  <ExternalLink size={16} className="text-white/30 group-hover:text-brand-blue transition-colors shrink-0" />
+                  <ExternalLink size={16} className="text-white/30 group-hover:text-brand-pear transition-colors shrink-0" />
                 </a>
 
                 {/* GitHub */}

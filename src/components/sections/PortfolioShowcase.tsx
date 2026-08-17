@@ -109,14 +109,14 @@ export function PortfolioShowcase({ onContactOpen }: PortfolioShowcaseProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.05 }}
-            className="col-span-12 lg:col-span-5 bg-white/[0.02] border border-white/10 hover:border-brand-blue/30 rounded-3xl p-7 sm:p-8 flex flex-col justify-between group transition-all duration-300 hover:bg-white/[0.03] hover:-translate-y-1 shadow-lg shadow-black/20"
+            className="col-span-12 lg:col-span-5 bg-white/[0.02] border border-white/10 hover:border-brand-pear/30 rounded-3xl p-7 sm:p-8 flex flex-col justify-between group transition-all duration-300 hover:bg-white/[0.03] hover:-translate-y-1 shadow-lg shadow-black/20"
           >
             <div>
               <div className="flex items-center justify-between mb-6">
                 <div className="w-11 h-11 rounded-2xl flex items-center justify-center bg-white/5 border border-white/10 text-white group-hover:scale-105 transition-transform duration-300">
                   <SiPython className="w-5 h-5" />
                 </div>
-                <span className="text-[11px] font-mono uppercase tracking-widest px-3 py-1 rounded-full bg-brand-blue/10 text-brand-blue border border-brand-blue/20">
+                <span className="text-[11px] font-mono uppercase tracking-widest px-3 py-1 rounded-full bg-brand-pear/10 text-brand-pear border border-brand-pear/20">
                   Backend
                 </span>
               </div>
@@ -191,7 +191,7 @@ export function PortfolioShowcase({ onContactOpen }: PortfolioShowcaseProps) {
           >
             <div>
               <div className="flex items-center justify-between gap-2 mb-4">
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-brand-blue/10 text-brand-blue border border-brand-blue/20">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-brand-pear/10 text-brand-pear border border-brand-pear/20">
                   {certificates[0].tag}
                 </span>
                 <span className="text-xs text-white/40 font-mono">
@@ -232,7 +232,7 @@ export function PortfolioShowcase({ onContactOpen }: PortfolioShowcaseProps) {
                 href={certificates[0].link}
                 target="_blank"
                 rel="noreferrer"
-                className="h-8 px-3 flex items-center justify-center gap-1 text-[11px] font-mono text-brand-blue hover:text-white bg-brand-blue/10 hover:bg-brand-blue border border-brand-blue/20 rounded-lg transition-all"
+                className="h-8 px-3 flex items-center justify-center gap-1 text-[11px] font-mono text-brand-pear hover:text-white bg-brand-pear/10 hover:bg-brand-pear border border-brand-pear/20 rounded-lg transition-all"
               >
                 PDF <ExternalLink className="w-2.5 h-2.5" />
               </a>
@@ -249,7 +249,7 @@ export function PortfolioShowcase({ onContactOpen }: PortfolioShowcaseProps) {
           >
             <div>
               <div className="flex items-center justify-between gap-2 mb-4">
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-brand-blue/10 text-brand-blue border border-brand-blue/20">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-brand-pear/10 text-brand-pear border border-brand-pear/20">
                   {certificates[1].tag}
                 </span>
                 <span className="text-xs text-white/40 font-mono">
@@ -290,7 +290,7 @@ export function PortfolioShowcase({ onContactOpen }: PortfolioShowcaseProps) {
                 href={certificates[1].link}
                 target="_blank"
                 rel="noreferrer"
-                className="h-8 px-3 flex items-center justify-center gap-1 text-[11px] font-mono text-brand-blue hover:text-white bg-brand-blue/10 hover:bg-brand-blue border border-brand-blue/20 rounded-lg transition-all"
+                className="h-8 px-3 flex items-center justify-center gap-1 text-[11px] font-mono text-brand-pear hover:text-white bg-brand-pear/10 hover:bg-brand-pear border border-brand-pear/20 rounded-lg transition-all"
               >
                 PDF <ExternalLink className="w-2.5 h-2.5" />
               </a>
@@ -348,7 +348,7 @@ export function PortfolioShowcase({ onContactOpen }: PortfolioShowcaseProps) {
                       href={selectedCert.link}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex-1 h-10 flex items-center justify-center gap-2 bg-brand-blue text-white hover:bg-brand-blue/80 transition-all font-medium text-xs rounded-xl"
+                      className="flex-1 h-10 flex items-center justify-center gap-2 bg-brand-pear text-white hover:bg-brand-pear/80 transition-all font-medium text-xs rounded-xl"
                     >
                       Open PDF
                       <ExternalLink size={14} />

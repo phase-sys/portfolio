@@ -3,7 +3,6 @@
 @theme inline {
   /* Brand System */
   --color-brand-pear: oklch(0.82 0.19 128); /* Primary accent */
-  --color-brand-blue: oklch(0.7 0.12 240);  /* Mobile service accent */
   --color-brand-emerald: oklch(0.72 0.17 160); /* Desktop service accent */
   --color-brand-coral: oklch(0.75 0.16 40); /* Certs accent */
   
