@@ -36,7 +36,14 @@ export function Footer() {
         {/* Code Brand Note */}
         <div className="flex items-center gap-2">
           <span>💻</span>
-          <span className="text-white/60 tracking-wider">phase-sys</span>
+          <a 
+            href="https://github.com/phase-sys"
+            target="_blank"
+            rel="noreferrer"
+            className="text-white/60 hover:text-brand-pear tracking-wider transition-colors"
+          >
+            phase-sys
+          </a>
         </div>
 
         {/* Live Local Time (Always PHT) & Back to Top */}
