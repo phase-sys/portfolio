@@ -201,7 +201,7 @@ export function PortfolioShowcase({ onContactOpen }: PortfolioShowcaseProps) {
 
               <div 
                 onClick={() => setSelectedCert(certificates[0])}
-                className="relative w-full h-32 mb-4 rounded-xl overflow-hidden bg-black/30 border border-white/5 p-2 cursor-pointer group/img"
+                className="relative w-full min-h-[140px] aspect-[16/10] mb-4 rounded-xl overflow-hidden bg-black/30 border border-white/5 p-2 cursor-pointer group/img"
               >
                 <Image 
                   src={certificates[0].certImg} 
@@ -258,7 +258,7 @@ export function PortfolioShowcase({ onContactOpen }: PortfolioShowcaseProps) {
 
               <div 
                 onClick={() => setSelectedCert(certificates[1])}
-                className="relative w-full h-32 mb-4 rounded-xl overflow-hidden bg-black/30 border border-white/5 p-2 cursor-pointer group/img"
+                className="relative w-full min-h-[140px] aspect-[16/10] mb-4 rounded-xl overflow-hidden bg-black/30 border border-white/5 p-2 cursor-pointer group/img"
               >
                 <Image 
                   src={certificates[1].certImg} 
