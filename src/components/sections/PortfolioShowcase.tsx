@@ -41,20 +41,20 @@ export function PortfolioShowcase({ onContactOpen }: PortfolioShowcaseProps) {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col items-center text-center max-w-2xl mx-auto mb-14"
+          className="flex flex-col items-center text-center max-w-2xl mx-auto mb-12"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-space-grotesk font-bold text-white tracking-tight leading-tight mb-4">
-            Building modern, high-performance web systems
+          <h1 className="text-3xl sm:text-4xl font-space-grotesk font-bold text-white tracking-tight mb-2">
+            Software Engineer
           </h1>
 
-          <p className="text-sm sm:text-base text-foreground/60 leading-relaxed font-sans mb-8 max-w-lg">
-            Software engineer focused on scalable architectures, type-safe full-stack applications, and clean user experiences.
+          <p className="text-sm sm:text-base text-foreground/60 leading-relaxed font-sans mb-6">
+            Specialized in modern web & cloud architecture.
           </p>
 
           {/* Primary CTA Button */}
           <button
             onClick={onContactOpen}
-            className="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-brand-pear text-bg-dark font-space-grotesk font-bold text-sm transition-all duration-300 hover:bg-[#c9ee0f] hover:scale-105 shadow-[0_0_25px_rgba(182,216,13,0.3)] hover:shadow-[0_0_35px_rgba(182,216,13,0.5)] cursor-pointer"
+            className="group relative inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-brand-pear text-bg-dark font-space-grotesk font-bold text-xs sm:text-sm transition-all duration-300 hover:bg-[#c9ee0f] hover:scale-105 shadow-[0_0_20px_rgba(182,216,13,0.3)] hover:shadow-[0_0_30px_rgba(182,216,13,0.45)] cursor-pointer"
           >
             <span>Get in Touch</span>
             <ArrowUpRight className="w-4 h-4 text-bg-dark stroke-[2.5] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
