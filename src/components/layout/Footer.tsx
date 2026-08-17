@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ArrowUp, Coffee } from "lucide-react"
+import { ArrowUp, Terminal } from "lucide-react"
 
 export function Footer() {
   const [time, setTime] = useState<string>("")
@@ -9,6 +9,7 @@ export function Footer() {
   useEffect(() => {
     const updateTime = () => {
       const now = new Date()
+      // Always forces Philippine Time (Asia/Manila, UTC+8) regardless of visitor location
       setTime(
         now.toLocaleTimeString("en-US", {
           timeZone: "Asia/Manila",
@@ -32,18 +33,17 @@ export function Footer() {
     <footer className="w-full border-t border-white/5 py-10 mt-4 relative">
       <div className="container mx-auto px-4 md:px-8 max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-white/40">
         
-        {/* Fun Crafted Note */}
+        {/* Code Brand Note */}
         <div className="flex items-center gap-2">
-          <Coffee className="w-3.5 h-3.5 text-brand-pear" />
-          <span>Crafted with clean code & lots of coffee</span>
+          <span>💻</span>
+          <span className="text-white/60 tracking-wider">phase-sys</span>
         </div>
 
-        {/* Live Local Time & Back to Top */}
+        {/* Live Local Time (Always PHT) & Back to Top */}
         <div className="flex items-center gap-5">
           {time && (
-            <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-pear animate-pulse" />
-              <span>PH: <span className="text-white/70">{time}</span></span>
+            <div className="text-white/40">
+              PHT: <span className="text-white/70">{time}</span>
             </div>
           )}
 
