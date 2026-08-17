@@ -15,7 +15,7 @@ export default function Home() {
       <ParticleBackground />
       <Navbar onContactOpen={() => setIsContactModalOpen(true)} />
       <main className="flex min-h-screen flex-col items-center justify-center w-full overflow-x-hidden pt-20">
-        <PortfolioShowcase />
+        <PortfolioShowcase onContactOpen={() => setIsContactModalOpen(true)} />
       </main>
       <ContactModal 
         isOpen={isContactModalOpen} 

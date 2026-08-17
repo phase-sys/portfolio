@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { SiNextdotjs, SiPython } from "react-icons/si"
-import { Cloud, X, ExternalLink, Award, Sparkles, Layers } from "lucide-react"
+import { Cloud, X, ExternalLink, ArrowUpRight } from "lucide-react"
 import Image from "next/image"
 
 const certificates = [
@@ -25,13 +25,42 @@ const certificates = [
   }
 ]
 
-export function PortfolioShowcase() {
+interface PortfolioShowcaseProps {
+  onContactOpen?: () => void
+}
+
+export function PortfolioShowcase({ onContactOpen }: PortfolioShowcaseProps) {
   const [selectedCert, setSelectedCert] = useState<typeof certificates[0] | null>(null)
 
   return (
-    <section className="py-16 md:py-24 relative w-full">
+    <section className="py-12 md:py-16 relative w-full">
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         
+        {/* Top Call to Action Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col items-center text-center max-w-2xl mx-auto mb-14"
+        >
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-space-grotesk font-bold text-white tracking-tight leading-tight mb-4">
+            Building modern, high-performance web systems
+          </h1>
+
+          <p className="text-sm sm:text-base text-foreground/60 leading-relaxed font-sans mb-8 max-w-lg">
+            Software engineer focused on scalable architectures, type-safe full-stack applications, and clean user experiences.
+          </p>
+
+          {/* Primary CTA Button */}
+          <button
+            onClick={onContactOpen}
+            className="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-brand-pear text-bg-dark font-space-grotesk font-bold text-sm transition-all duration-300 hover:bg-[#c9ee0f] hover:scale-105 shadow-[0_0_25px_rgba(182,216,13,0.3)] hover:shadow-[0_0_35px_rgba(182,216,13,0.5)] cursor-pointer"
+          >
+            <span>Get in Touch</span>
+            <ArrowUpRight className="w-4 h-4 text-bg-dark stroke-[2.5] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+          </button>
+        </motion.div>
+
         {/* Bento Grid */}
         <div className="grid grid-cols-12 gap-5">
           
