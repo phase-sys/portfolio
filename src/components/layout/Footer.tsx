@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ArrowUp, Terminal } from "lucide-react"
+import { ArrowUp, ExternalLink } from "lucide-react"
 
 export function Footer() {
   const [time, setTime] = useState<string>("")
@@ -45,6 +45,15 @@ export function Footer() {
             phase-sys
           </a>
         </div>
+
+        <a
+          href="/certificates/bir-compliance.png"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-1.5 text-white/60 hover:text-brand-pear underline underline-offset-4 transition-colors"
+        >
+          BIR Compliance <ExternalLink className="w-3 h-3" />
+        </a>
 
         {/* Live Local Time (Always PHT) & Back to Top */}
         <div className="flex items-center gap-5">
