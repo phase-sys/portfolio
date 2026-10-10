@@ -52,7 +52,7 @@ export function Footer() {
           rel="noreferrer"
           className="inline-flex items-center gap-1.5 text-white/60 hover:text-brand-pear underline underline-offset-4 transition-colors"
         >
-          BIR Compliance <ExternalLink className="w-3 h-3" />
+          BIR Seal Badge <ExternalLink className="w-3 h-3" />
         </a>
 
         {/* Live Local Time (Always PHT) & Back to Top */}
