@@ -2,6 +2,14 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Use Node.js **24.22.1**, pinned in `.nvmrc` and `package.json`, and pnpm **11.22.0**. With nvm, run `nvm install` and `nvm use`, then confirm `node --version` before installing dependencies:
+
+```bash
+pnpm install --frozen-lockfile
+```
+
+Node 24.22.1 includes the October 2026 security fixes, including CVE-2026-111497 in the Brotli decoder. See the [official Node.js advisory](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases).
+
 First, run the development server:
 
 ```bash
@@ -30,6 +38,16 @@ To learn more about Next.js, take a look at the following resources:
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
+
+Keep the Vercel project on Node.js 24.x. Vercel manages runtime patches; a 24.x setting alone does not establish the patch level of an existing deployment. Confirm the deployed runtime and rollout status against the [Vercel advisory](https://vercel.com/kb/bulletin/node-js-security-advisory). WAF protections do not replace runtime patching. External servers, CI runners, and local development must use a patched runtime too. If adding CI, have its Node setup read `.nvmrc`.
+
+Run these checks with the pinned runtime before deploying:
+
+```bash
+pnpm lint
+pnpm exec tsc --noEmit
+pnpm build
+```
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
